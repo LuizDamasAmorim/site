@@ -1,31 +1,63 @@
 @charset "UTF-8";
 
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*importação de fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Css Reset (Compatibilizar com todos os navegadores) */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-img{
-    border-radius: 50%;
-    width: 150px;
-}
-
-h1{
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em; /* 1em = 100% (tamanho padrão) */
     font-weight: 900;
+    font-size: normal;
 }
 
-/*------------Breakpoints*----------*/
+/* Layout */
+
+.container {
+    margin: 0 auto; /* centraliza o bloco*/
+}
+
+/*----------------------------------*/
 
 /*Smartphone Portrait*/
+/*cabeçalho*/
+header{
+    height: 100px;
+    background-color: rgb(150, 212, 150);
+}
+
+#logo img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px 0px 10px;
+}
+
+
 
 /*-----------------------------------*/
 
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
-    body{
-        background-color: #00ff00;
-        color: white;
+    
+    /* Cabeçalho */
+    #logo img{
+        margin: 10px 0px 0px 0px;
+        background-color: yellow;
     }
+    .container{
+        max-width: 540px;
+        
+    }
+    
 }
 
 /*----------------------------------*/
@@ -33,8 +65,18 @@ h1{
 /*Tablet Portrait*/
 
 @media (min-width: 768px) {
-    body{
-        background-color: #ffff00;
+    /* cabeçalho */
+
+    .container{
+        max-width: 720px;
+        background-color: #00ff00;
+    }
+    header{
+        height: 130px;
+    }
+    #logo img {
+        width: 110px;
+        height: 110px;
     }
 }
 
@@ -43,8 +85,10 @@ h1{
 /*Tablet Landscape*/
 
 @media (min-width: 992px) {
-    body{
-        background-color: #00ffff;
+    /* cabeçalho */
+    .container{
+        max-width: 960px;
+        background-color: #ffa500;
     }
 }
 
@@ -53,10 +97,18 @@ h1{
 /* PCS e Notebooks*/
 
 @media (min-width: 1200px) {
-    body{
-        background-color: #ff000f;
-        color: #ffff00;
-    }
+        /* cabeçalho */
+        .container{
+            max-width: 1140px;
+            background-color: #ff009d;
+        }
+        header{
+            height: 150px;
+        }
+        #logo img{
+            width: 128px;
+            height: 128px;
+        }
 }
 
 /*-----------------------------------*/
@@ -64,9 +116,17 @@ h1{
 /*Telas FullHD / 4K / SmartTVS*/
 
 @media (min-width: 1400px) {
-    body{
-        background-color: #4b0082;
-        color: white;
+       /* cabeçalho */
+       .container{
+        max-width: 1360px;
+        background-color: rebeccapurple
+    }
+    header{
+        height: 195px;
+    }
+    #logo img{
+        width: 176px;
+        height: 176px;
     }
 }
 /*----------------------------------*/
