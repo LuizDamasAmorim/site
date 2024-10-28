@@ -3,6 +3,13 @@
 /*importação de fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Váriaveis */
+
+:root {
+    --verde: #416b25;
+    --branco: white;
+}
+
 /* Css Reset (Compatibilizar com todos os navegadores) */
 
 *{
@@ -29,15 +36,56 @@ body {
 /*Smartphone Portrait*/
 /*cabeçalho*/
 header{
-    height: 100px;
-    background-color: rgb(150, 212, 150);
+    height: 90px;
+    background-color: var(--branco);
 }
 
 #logo img {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin: 10px 0px 0px 10px;
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 10px;
+}
+
+#check{
+    display: none;
+}
+
+/*Efeito de deslizar o menu*/
+/*Se check estiver "checado", criar um estilo para a ul*/
+#check:checked~ul{
+    right: 0;
+    transition: all 0.4s;
+}
+
+label{
+    font-size: 1.9em;
+    font-weight: 500;
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    height: 100vh; /* 100vh - 100% altura da tela */
+    background-color: var(--verde);
+    list-style: none; /* remover bullets */
+    width: 65%;
+    position: fixed;
+    top: 90px;
+    right: -65%;
+}
+
+nav ul li {
+    padding: 20px 20px;
+    border-bottom: 1px solid color(none);
+    text-align: right;   
+}
+
+nav ul li a { 
+    color: var(--branco);
+    text-decoration: none; /* remover sublinhado */
 }
 
 
@@ -119,7 +167,7 @@ header{
        /* cabeçalho */
        .container{
         max-width: 1360px;
-        background-color: rebeccapurple
+        background-color: var(--branco)
     }
     header{
         height: 195px;
