@@ -43,7 +43,8 @@ body {
     padding: 10px 0px;
     border-radius: 25px;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 70px;
+    
 }
 
 /*----------------------------------*/
@@ -58,8 +59,8 @@ header{
 
 #logo img {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 84px;
+    height: 84px;
     margin: 0px 0px 0px 10px;
 }
 
@@ -85,7 +86,7 @@ label{
 
 nav ul {
     height: 100vh; /* 100vh - 100% altura da tela */
-    background-color: var(--verde);
+    background-color: rgba(2, 66, 2, 0.651);
     list-style: none; /* remover bullets */
     width: 65%;
     position: fixed;
@@ -106,8 +107,8 @@ nav ul li a {
 
 /* Banner */
 main{
-    height: 60vh; /*Vai oculpar 60% da tela*/
-    background: url(img/banner.jpg);
+    height: 67vh; /*Vai oculpar 67% do espaço que ela esta na tela*/
+    background: url(img/chapada-diamantina.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -117,7 +118,7 @@ main{
 }
 main h1, h2{
     color: var(--branco);
-    text-shadow: #000 0.1em 0em 0.1em; /*sombra*/
+    /*text-shadow: #000 0.1em 0em 0.1em; /*sombra*/
 }
 main h1{
     font-size: 3em;
@@ -169,6 +170,16 @@ main h2{
         width: 50%;
         right: -50%;
     }
+
+    /*banner*/
+
+    main h1{
+        font-size: 4em;
+    }
+
+        main h2{
+            font-size: 2.5em;
+        }
 }
 
 /*----------------------------------*/
@@ -229,6 +240,10 @@ main h2{
         nav ul li a:hover {
             color: #5ac610;
         }
+
+        main h1{
+            font-size: 5em;
+        }
 }
 
 /*-----------------------------------*/
@@ -243,12 +258,12 @@ main h2{
     }
 
     header{
-        height: 180px;
+        height: 170px;
     }
 
     #logo img{
-        width: 170px;
-        height: 170px;
+        width: 160px;
+        height: 160px;
     }
 }
 /*----------------------------------*/
