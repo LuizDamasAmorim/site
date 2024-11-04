@@ -72,7 +72,6 @@ header{
 /*Se check estiver "checado", criar um estilo para a ul*/
 #check:checked~ul{
     right: 0;
-    transition: all 0.4s;
 }
 
 label{
@@ -86,12 +85,13 @@ label{
 
 nav ul {
     height: 100vh; /* 100vh - 100% altura da tela */
-    background-color: rgba(2, 66, 2, 0.651);
+    background-color: rgba(2, 59, 2, 0.788);
     list-style: none; /* remover bullets */
     width: 65%;
     position: fixed;
     top: 90px;
     right: -65%;
+    transition: all 0.4s;
 }
 
 nav ul li {
