@@ -69,8 +69,8 @@ header{
 
 #logo img {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin: 0px 0px 0px 10px;
 }
 
@@ -195,14 +195,23 @@ main h2{
 @media (min-width: 576px) {
     
     /* Cabeçalho */
+
+    header{
+        height: 110px;
+    }
     #logo img{
+        width: 100px;
+        height: 100px;
         margin: 10px 0px 0px 0px;
     }
     .container{
         max-width: 540px;
-        
     }
 
+    label{
+        font-size: 3em;
+    }
+ 
     /*******Destaque*******/
 
     #imagemDestaque{
@@ -234,11 +243,11 @@ main h2{
         max-width: 720px;
     }
     header{
-        height: 130px;
+        height: 140px;
     }
     #logo img {
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
     }
 
     nav ul{
@@ -247,7 +256,16 @@ main h2{
         right: -50%;
     }
 
+    .botao{
+        padding: 15px 22px;
+        font-size: 30px;
+    }
+
     /*banner*/
+
+    main{
+        height: 70vh;
+    }
 
     main h1{
         font-size: 4em;
@@ -273,6 +291,15 @@ main h2{
     /* cabeçalho */
     .container{
         max-width: 960px;
+    }
+
+    header{
+        height: 140px;
+    }
+
+    #logo img{
+        width: 130px;
+        height: 130px;
     }
 }
 
