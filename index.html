@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,68 @@
     <link rel="stylesheet" href="style.css">
     <title>Viaja Mais Brasil</title>
 </head>
+
 <body>
     <!-- Cabeçalho -->
 
-    <header class="container">
+    <header>
+        <div class="container">
 
-        <!-- Logotipo -->
-        <div id="logo">
-            <img src="img/logo-turismo.png" alt="Logotipo da o site">
+            <!-- Logotipo -->
+            <div id="logo">
+                <img src="img/logo-turismo.png" alt="Logotipo da o site">
+            </div>
+            <!-- Menu -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">&#9776;</label>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Menu -->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check">&#9776;</label>
-            <ul>
-                <li ><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Conteúdo</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!--main-->
     <main>
-        <h1>Viaja Mais Brasil</h1>
-        <h2>Conheça os lugares turisticos do Brasil</h2>
+        <h1 class="hBanner">Viaja Mais Brasil</h1>
+        <h2 class="hBanner">Conheça os lugares turisticos do Brasil</h2>
         <a target="_blank" href="https://github.com/LuizDamasAmorim" class="botao">Saiba +</a>
     </main>
+
+    <!--Seção de destaque-->
+    <section id="destaque">
+        <div class="container">
+
+            <!--Imagem de destaque-->
+            <div id="imagemDestaque">
+                <img src="img/icone-cristo-redentor.jpg" alt="Cristo Redentor">
+            </div>
+
+            <!--Texto de destaque-->
+            <div id="textoDestaque">
+                <h2>Viajens pelo Brasil</h2>
+
+                <p>Encontre no nosso site lugares turisticos pelo Brasil para você viajar sozinho ou com a familia</p>
+
+                <div class="topicos">
+                    <img src="img/icon-aviao.png" alt="Avião" class="icon-destaque">
+                    <p>Lugares para suas férias</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/icon-mala.png" alt="Mala" class="icon-destaque">
+                    <p>Conheça melhor os lugares turisticos</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/icon-map.webp" alt="Mapa" class="icon-destaque">
+                    <p>Praias pelo país</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

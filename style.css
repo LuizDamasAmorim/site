@@ -8,6 +8,7 @@
 :root {
     --verde: #416b25;
     --branco: white;
+    --vclaro: #5ac610;
 }
 
 /* Css Reset (Compatibilizar com todos os navegadores) */
@@ -21,7 +22,6 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1em; /* 1em = 100% (tamanho padrão) */
-    font-size: normal;
 }
 
 /* Layout */
@@ -37,14 +37,24 @@ body {
     text-decoration: none;
     color: var(--branco);
     font-size: 1.1em;
-    font-weight: 700px;
+    font-weight: 700;
     background-color: #416b25;
     width: 100px;
     padding: 10px 0px;
     border-radius: 25px;
     align-self: center;
-    margin-top: 70px;
-    
+    margin-top: 40px;
+    border: 2px solid white;
+
+}
+.botao:hover{
+
+    padding: 11px 5px;
+    transition: all 0.2s;
+}
+
+.icon-destaque{
+    width: 48px;
 }
 
 /*----------------------------------*/
@@ -59,8 +69,8 @@ header{
 
 #logo img {
     border-radius: 50%;
-    width: 84px;
-    height: 84px;
+    width: 80px;
+    height: 80px;
     margin: 0px 0px 0px 10px;
 }
 
@@ -96,7 +106,7 @@ nav ul {
 
 nav ul li {
     padding: 20px 20px;
-    border-bottom: 1px solid color(none);
+    border-bottom: 1px solid black;
     text-align: right;   
 }
 
@@ -107,8 +117,8 @@ nav ul li a {
 
 /* Banner */
 main{
-    height: 67vh; /*Vai oculpar 67% do espaço que ela esta na tela*/
-    background: url(img/chapada-diamantina.jpg);
+    height: 80vh; /*Vai oculpar 67% do espaço que ela esta na tela*/
+    background: url(img/chapada-diamantina-p.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -116,9 +126,11 @@ main{
     justify-content: center;
     text-align: center;
 }
-main h1, h2{
+.hBanner{
     color: var(--branco);
-    /*text-shadow: #000 0.1em 0em 0.1em; /*sombra*/
+}
+main h1, h2{
+    /*text-shadow: #2fdf18ab 0.1em 0em 0em; /*sombra*/
 }
 main h1{
     font-size: 3em;
@@ -127,6 +139,54 @@ main h2{
     font-size: 1.8em;
     margin-top: 20px;
 }
+
+/*****Destaque*****/
+
+#destaque{
+    background: url(img/cristo-redentor-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+}
+
+#destaque .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagemDestaque img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#textoDestaque{
+    color: var(--branco);
+}
+
+#textoDestaque h2{
+    margin-bottom: 20px;
+}
+
+#textoDestaque>p{
+    margin-bottom: 15px;
+}
+
+.topicos{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.topicos img{
+    margin-right: 10px;
+}
+
+.topicos p{
+    font-weight: 600;
+}
+
+
 
 /*----------------------------------*/
 
@@ -137,13 +197,30 @@ main h2{
     /* Cabeçalho */
     #logo img{
         margin: 10px 0px 0px 0px;
-        background-color: yellow;
     }
     .container{
         max-width: 540px;
         
     }
-    
+
+    /*******Destaque*******/
+
+    #imagemDestaque{
+        /*display: block;*/ /*serve para mostrar a imagem se voce tiver apagado ela com o display none*/
+    }
+
+    #destaque .container{
+        flex-direction: row;
+    }
+
+    #imagemDestaque{
+        margin-right: 50px;
+    }
+
+    #imagemDestaque img{
+        width: 256px;
+        height: 256px;
+    }
 }
 
 /*----------------------------------*/
@@ -155,7 +232,6 @@ main h2{
 
     .container{
         max-width: 720px;
-        background-color: #00ff00;
     }
     header{
         height: 130px;
@@ -180,6 +256,13 @@ main h2{
         main h2{
             font-size: 2.5em;
         }
+
+    /*******Destaque*******/
+
+    #imagemDestaque img{
+        width: 300px;
+        height: 300px;
+    }
 }
 
 /*----------------------------------*/
@@ -190,7 +273,6 @@ main h2{
     /* cabeçalho */
     .container{
         max-width: 960px;
-        background-color: #ffa500;
     }
 }
 
@@ -201,7 +283,7 @@ main h2{
 @media (min-width: 1200px) {
         .container{
             max-width: 1140px;
-            background-color: #ff009d;
+            justify-content: space-around;
         }
 
         /* cabeçalho */
@@ -211,7 +293,7 @@ main h2{
         #logo img{
             width: 128px;
             height: 128px;
-            margin-left: 100px;
+
         } 
 
         /* Transformação do menu */
@@ -223,7 +305,6 @@ main h2{
             width: 100%;
             height: auto;
             position: static;
-            margin-right: 200px;
             display: flex;
             gap: 50px;
             font-size: 17px;
@@ -238,12 +319,32 @@ main h2{
             color: black;
         }
         nav ul li a:hover {
-            color: #5ac610;
+            padding: 10px;
+            border-radius: 10px;
+            color: #416b25;
+            transition: 0.2s;
         }
 
         main h1{
             font-size: 5em;
         }
+
+           /*******Destaque*******/
+
+    #destaque{
+        /*O codigo abaixo fixa o banner quando voce rolar a tela (efeito paralaxe)*/
+        background-attachment: fixed;
+        height: 50vh;
+    }
+
+    .topicos img{
+        color: var(--branco);
+    }
+
+    #imagemDestaque img{
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /*-----------------------------------*/
@@ -254,7 +355,6 @@ main h2{
        /* cabeçalho */
        .container{
         max-width: 1360px;
-        background-color: var(--branco)
     }
 
     header{
