@@ -13,7 +13,7 @@
 
 /* Css Reset (Compatibilizar com todos os navegadores) */
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,13 +21,15 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 1em; /* 1em = 100% (tamanho padrão) */
+    font-size: 1em;
+    /* 1em = 100% (tamanho padrão) */
 }
 
 /* Layout */
 
 .container {
-    margin: 0 auto; /* centraliza o bloco*/
+    margin: 0 auto;
+    /* centraliza o bloco*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,13 +49,14 @@ body {
     border: 2px solid white;
 
 }
-.botao:hover{
+
+.botao:hover {
 
     padding: 11px 5px;
     transition: all 0.2s;
 }
 
-.icon-destaque{
+.icon-destaque {
     width: 48px;
 }
 
@@ -62,7 +65,7 @@ body {
 /*Smartphone Portrait*/
 
 /*cabeçalho*/
-header{
+header {
     height: 90px;
     background-color: var(--branco);
 }
@@ -74,17 +77,17 @@ header{
     margin: 0px 0px 0px 10px;
 }
 
-#check{
+#check {
     display: none;
 }
 
 /*Efeito de deslizar o menu*/
 /*Se check estiver "checado", criar um estilo para a ul*/
-#check:checked~ul{
+#check:checked~ul {
     right: 0;
 }
 
-label{
+label {
     font-size: 1.9em;
     font-weight: 500;
     position: fixed;
@@ -94,9 +97,11 @@ label{
 }
 
 nav ul {
-    height: 100vh; /* 100vh - 100% altura da tela */
-    background-color: rgba(2, 59, 2, 0.788);
-    list-style: none; /* remover bullets */
+    height: 100vh;
+    /* 100vh - 100% altura da tela */
+    background-color: white;
+    list-style: none;
+    /* remover bullets */
     width: 65%;
     position: fixed;
     top: 90px;
@@ -106,18 +111,21 @@ nav ul {
 
 nav ul li {
     padding: 20px 20px;
-    border-bottom: 1px solid black;
-    text-align: right;   
+    text-align: right;
 }
 
-nav ul li a { 
-    color: var(--branco);
-    text-decoration: none; /* remover sublinhado */
+nav ul li a {
+    color: #416b25;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    /* remover sublinhado */
 }
 
 /* Banner */
-main{
-    height: 80vh; /*Vai oculpar 67% do espaço que ela esta na tela*/
+main {
+    height: 80vh;
+    /*Vai oculpar 67% do espaço que ela esta na tela*/
     background: url(img/chapada-diamantina-p.jpg);
     background-size: cover;
     background-position: center;
@@ -126,161 +134,204 @@ main{
     justify-content: center;
     text-align: center;
 }
-.hBanner{
+
+.hBanner {
     color: var(--branco);
 }
-main h1, h2{
+
+main h1,
+h2 {
     /*text-shadow: #2fdf18ab 0.1em 0em 0em; /*sombra*/
 }
-main h1{
+
+main h1 {
     font-size: 3em;
 }
-main h2{
+
+main h2 {
     font-size: 1.8em;
     margin-top: 20px;
 }
 
 /*****Destaque*****/
 
-#destaque{
+#destaque {
     background: url(img/cristo-redentor-2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
 }
 
-#destaque .container{
+#destaque .container {
     flex-direction: column;
     align-items: center;
 }
 
-#imagemDestaque img{
-    width: 200px;
-    height: 200px;
+#imagemDestaque img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-}
-
-#textoDestaque{
-    color: var(--branco);
-}
-
-#textoDestaque h2{
     margin-bottom: 20px;
 }
 
-#textoDestaque>p{
+#textoDestaque {
+    color: var(--branco);
+}
+
+#textoDestaque h2 {
+    margin-bottom: 20px;
+}
+
+#textoDestaque>p {
     margin-bottom: 15px;
 }
 
-.topicos{
+.topicos {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-.topicos img{
+.topicos img {
     margin-right: 10px;
 }
 
-.topicos p{
+.topicos p {
     font-weight: 600;
 }
 
+/*--------sobre-------*/
 
+#sobre .container{
+    flex-direction: column;
+}
 
-/*----------------------------------*/
+#sobre{
+    padding: 50px 15px;
+}
+
+#sobre h2{
+    color: #416b25;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#sobre p{
+    font-weight: 500;
+}
+
+#video iframe{
+   width: 340px;
+   height: 191px;
+   margin-top: 20px;
+}
+
+/* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Smartphone Landscape*/
 
 @media (min-width: 576px) {
-    
+
     /* Cabeçalho */
 
-    header{
+    header {
         height: 110px;
     }
-    #logo img{
+
+    #logo img {
         width: 100px;
         height: 100px;
         margin: 10px 0px 0px 0px;
     }
-    .container{
+
+    .container {
         max-width: 540px;
     }
 
-    label{
+    label {
         font-size: 3em;
     }
- 
     /*******Destaque*******/
 
-    #imagemDestaque{
-        /*display: block;*/ /*serve para mostrar a imagem se voce tiver apagado ela com o display none*/
+    #imagemDestaque {
+        /*display: block;*/
+        /*serve para mostrar a imagem se voce tiver apagado ela com o display none*/
     }
 
-    #destaque .container{
+    #destaque .container {
         flex-direction: row;
     }
 
-    #imagemDestaque{
+    #imagemDestaque {
         margin-right: 50px;
     }
 
-    #imagemDestaque img{
+    #imagemDestaque img {
         width: 256px;
         height: 256px;
     }
+
+    /*--------sobre-------*/
+
+    #video iframe{
+        width: 560px;
+        height: 315px;
+    }
 }
 
-/*----------------------------------*/
+/* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Tablet Portrait*/
 
 @media (min-width: 768px) {
     /* cabeçalho */
 
-    .container{
+    .container {
         max-width: 720px;
     }
-    header{
+
+    header {
         height: 140px;
     }
+
     #logo img {
         width: 130px;
         height: 130px;
     }
 
-    nav ul{
+    nav ul {
         top: 130px;
         width: 50%;
         right: -50%;
     }
 
-    .botao{
+    .botao {
         padding: 15px 22px;
         font-size: 30px;
     }
 
     /*banner*/
 
-    main{
+    main {
         height: 70vh;
     }
 
-    main h1{
+    main h1 {
         font-size: 4em;
     }
 
-        main h2{
-            font-size: 2.5em;
-        }
+    main h2 {
+        font-size: 2.5em;
+    }
 
     /*******Destaque*******/
 
-    #imagemDestaque img{
+    #imagemDestaque img {
         width: 300px;
         height: 300px;
     }
+
+    /*--------sobre-------*/
 }
 
 /*----------------------------------*/
@@ -288,16 +339,17 @@ main h2{
 /*Tablet Landscape*/
 
 @media (min-width: 992px) {
+
     /* cabeçalho */
-    .container{
+    .container {
         max-width: 960px;
     }
 
-    header{
+    header {
         height: 140px;
     }
 
-    #logo img{
+    #logo img {
         width: 130px;
         height: 130px;
     }
@@ -308,69 +360,107 @@ main h2{
 /* PCS e Notebooks*/
 
 @media (min-width: 1200px) {
-        .container{
-            max-width: 1140px;
-            justify-content: space-around;
-        }
+    .container {
+        max-width: 1140px;
+        justify-content: space-around;
+    }
 
-        /* cabeçalho */
-        header{
-            height: 150px;
-        }
-        #logo img{
-            width: 128px;
-            height: 128px;
+    /* cabeçalho */
+    header {
+        height: 150px;
+    }
 
-        } 
+    #logo img {
+        width: 128px;
+        height: 128px;
 
-        /* Transformação do menu */
-        label{
-            display: none;
-        }
+    }
 
-        nav ul {
-            width: 100%;
-            height: auto;
-            position: static;
-            display: flex;
-            gap: 50px;
-            font-size: 17px;
-            font-weight: 500;
-            background-color: transparent; /*remover a cor do background*/
-        }
-        nav ul li {
-            float: left;
-            border: 0;
-        }
-        nav ul li a {
-            color: black;
-        }
-        nav ul li a:hover {
-            padding: 10px;
-            border-radius: 10px;
-            color: #416b25;
-            transition: 0.2s;
-        }
+    /* Transformação do menu */
+    label {
+        display: none;
+    }
 
-        main h1{
-            font-size: 5em;
-        }
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: flex;
+        gap: 50px;
+        font-size: 17px;
+        font-weight: 500;
+        background-color: transparent;
+        /*remover a cor do background*/
+    }
 
-           /*******Destaque*******/
+    nav ul li {
+        float: left;
+        border: 0;
+    }
 
-    #destaque{
+    nav ul li a {
+        color: black;
+        font-weight: 500;
+    }
+
+    nav ul li a:hover {
+        padding: 10px;
+        border-radius: 10px;
+        color: #416b25;
+        transition: 0.2s;
+    }
+
+    main h1 {
+        font-size: 5em;
+    }
+
+    .botao {
+        padding: 10px 7px;
+        font-size: 20px;
+    }
+
+    .botao:hover{
+        padding: 12px 8px;
+    transition: all 0.1s;
+    }
+
+    /*******Destaque*******/
+
+    #destaque {
         /*O codigo abaixo fixa o banner quando voce rolar a tela (efeito paralaxe)*/
         background-attachment: fixed;
         height: 50vh;
     }
 
-    .topicos img{
+    main {
+        height: 80vh;
+    }
+
+    .topicos img {
         color: var(--branco);
     }
 
-    #imagemDestaque img{
+    #imagemDestaque img {
         width: 350px;
         height: 350px;
+    }
+
+       /*--------sobre-------*/
+
+       #sobre .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #institucional h2{
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #video iframe{
+        margin: 0;
     }
 }
 
@@ -379,18 +469,20 @@ main h2{
 /*Telas FullHD / 4K / SmartTVS*/
 
 @media (min-width: 1400px) {
-       /* cabeçalho */
-       .container{
+
+    /* cabeçalho */
+    .container {
         max-width: 1360px;
     }
 
-    header{
+    header {
         height: 170px;
     }
 
-    #logo img{
+    #logo img {
         width: 160px;
         height: 160px;
     }
 }
+
 /*----------------------------------*/
