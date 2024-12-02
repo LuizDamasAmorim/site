@@ -47,17 +47,43 @@ body {
     align-self: center;
     margin-top: 40px;
     border: 2px solid white;
-
 }
 
 .botao:hover {
-
     padding: 11px 5px;
     transition: all 0.2s;
 }
 
 .icon-destaque {
     width: 48px;
+}
+
+.card{
+    width: 255px;
+    height: 520px;
+    background-color: white;
+    border: 2px solid var(--verde);
+    margin-top: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+
+.card p{
+    text-align: left;
+    padding: 10px 30px 40px 30px;
+}
+
+.card a{
+    font-size: 15px;
+    padding: 10px 10px;
 }
 
 /*----------------------------------*/
@@ -226,6 +252,80 @@ main h2 {
    margin-top: 20px;
 }
 
+/*--------Faixa de Destaque-------*/
+
+#faixaDestaque{
+    background: url(img/cristo-redentor-2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#faixaDestaque .container{
+    flex-direction: column;
+}
+
+#imagemFaixa img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 30px;
+}
+
+#textoFaixa h2{
+    color: white;
+    margin-bottom: 15px;
+}
+#textoFaixa p{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.botao2 {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: #416b25;
+    width: 100px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 40px;
+    border: 2px solid white;
+}
+
+/* Seção de Conteúdo */
+
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2{
+    color: var(--verde);
+    margin-bottom: 20px;
+}
+
+#todos{
+    font-weight: 700;
+    font-size: 17px;
+    color: #416b25;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Smartphone Landscape*/
@@ -331,7 +431,12 @@ main h2 {
         height: 300px;
     }
 
-    /*--------sobre-------*/
+    /* Seção de conteúdo - Cards*/
+
+    .card{
+        margin: 0px 10px;
+    }
+
 }
 
 /*----------------------------------*/
@@ -353,6 +458,10 @@ main h2 {
         width: 130px;
         height: 130px;
     }
+
+    /* Seção de conteúdo - Cards*/
+
+
 }
 
 /*-----------------------------------*/
@@ -461,6 +570,22 @@ main h2 {
 
     #video iframe{
         margin: 0;
+    }
+
+     /*--------Faixa de Destaque-------*/
+
+     #faixaDestaque{
+        background-attachment: fixed;
+    }
+
+    #faixaDestaque .container{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #imagemFaixa img{
+        width: 280px;
+        height: 280px;
     }
 }
 
