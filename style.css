@@ -361,8 +361,13 @@ main h2 {
 }
 
 #contato .ctt{
+    padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#ficticios{
+    margin-top: 30px;
 }
 
 
@@ -417,6 +422,14 @@ main h2 {
         width: 560px;
         height: 315px;
     }
+
+    /*-- Sessão cards--*/
+
+    .containerCards{
+        gap: 15px;
+    }
+
+
 }
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
