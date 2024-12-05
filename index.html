@@ -14,7 +14,7 @@
     <!-- Cabeçalho -->
 
     <header>
-        <div class="container">
+        <div class="container" id="inicio">
 
             <!-- Logotipo -->
             <div id="logo">
@@ -25,10 +25,10 @@
                 <input type="checkbox" id="check">
                 <label for="check">&#9776;</label>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Conteúdo</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conteudo">Conteúdo</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -97,7 +97,9 @@
             <div id="textoFaixa">
                 <h2>Veja o guia de Turismo</h2>
                 <p>Veja em PFD:</p>
-                <a class="botao2" href="https://www.ifs.edu.br/images/EDIFS/ebooks/2017/E-Book_Teorias_t%C3%A9cnicas_e_tecnologia_para_a_forma%C3%A7%C3%A3o_e_atua%C3%A7%C3%A3o_profissional_do_guia_de_tuismo.pdf" target="_blank">PDF</a>
+                <a class="botao2"
+                    href="https://www.ifs.edu.br/images/EDIFS/ebooks/2017/E-Book_Teorias_t%C3%A9cnicas_e_tecnologia_para_a_forma%C3%A7%C3%A3o_e_atua%C3%A7%C3%A3o_profissional_do_guia_de_tuismo.pdf"
+                    target="_blank">PDF</a>
             </div>
 
         </div>
@@ -112,25 +114,89 @@
                 <div class="card">
                     <img src="img/icone-bauneario-camburiu.jpg" alt="Bauneario Camburiu">
                     <h3>Bauneario Camburiu</h3>
-                    <p>Conheça Bauneario Camburiu, queremos compartilhar um pouco deste lugar para você conhecer de pertinho com planjamentos</p>
+                    <p>Conheça Bauneario Camburiu, queremos compartilhar um pouco deste lugar para você conhecer de
+                        pertinho com planjamentos</p>
                     <a href="#" class="botao">Saiba Mais</a>
                 </div>
                 <div class="card">
                     <img src="img/icone-cristo-redentor.jpg" alt="Cristo Redentor Rio de Janeiro">
                     <h3>Rio de Janeiro</h3>
-                    <p>Conheça Rio de Janeiro e suas maravilhas, queremos compartilhar um pouco deste lugar para você conhecer de pertinho com planjamentos</p>
+                    <p>Conheça Rio de Janeiro e suas maravilhas, queremos compartilhar um pouco deste lugar para você
+                        conhecer de pertinho com planjamentos</p>
                     <a href="#" class="botao">Saiba Mais</a>
                 </div>
                 <div class="card">
                     <img src="img/icone-riviera.jpg" alt="Riviera">
                     <h3>Riviera</h3>
-                    <p>Conheça Riviera e suas maravilhas, queremos compartilhar um pouco deste lugar para você conhecer de pertinho com planjamentos</p>
+                    <p>Conheça Riviera e suas maravilhas, queremos compartilhar um pouco deste lugar para você conhecer
+                        de pertinho com planjamentos</p>
                     <a href="#" class="botao">Saiba Mais</a>
                 </div>
             </div>
             <a href="#" id="todos">Conheça Todos >>></a>
         </div>
     </section>
+
+    <!--Contato-->
+
+    <address id="contato">
+
+        <div class="container">
+            <div class="ctt">
+                <!-- Para a seção de contato usar a tag semântica address -->
+
+                <div class="localizacao">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.765972159767!2d-46.577542724546895!3d-23.540918260841668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec26cfdcfed%3A0x49e7eb66fd4f1f2!2sSenac%20Tatuap%C3%A9%20-%20Cel.%20Lu%C3%ADs%20Americano!5e0!3m2!1spt-BR!2sbr!4v1733334162474!5m2!1spt-BR!2sbr"
+                        width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <img width="50px" height="50px" src="img/localização.png" alt="Icone Local">
+                    <p>Senac Tatuapé - Cel. Luís Americano</p>
+                </div>
+
+                <div class="info">
+
+                    <div class="email">
+                        <a href="mailto:luizdamasamorim@gmail.com?subject=Contato do site" target="_blank"><img
+                                src="img/gmail.png" alt="E-mail">
+                            <p>luizdamasamorim@gmail.com</p>
+                        </a>
+                    </div>
+
+                    <a href="https://api.whatsapp.com/send?phone=5511951613813" target="_blank"><img
+                            src="img/whatsapp.png" alt="Whatsapp">
+                        <p>(11) 95161-3813</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </address>
+
+    <!-- Rodapé -->
+
+    <footer>
+        <div class="container">
+
+            <h2>Redes Sociais</h2>
+
+            <div>
+                <a href="https://www.linkedin.com/in/luiz-damas-amorim-3548312b2/" target="_blank"><img
+                        src="img/linkedin.png" alt="Linkedin"></a>
+
+                <a href="https://github.com/LuizDamasAmorim" target="_blank"><img src="img/github-logo.png"
+                        alt="Git Hub"></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Topo do Site -->
+    <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo"></a>
 
 </body>
 
