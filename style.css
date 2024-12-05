@@ -348,8 +348,7 @@ main h2 {
 }
 
 .ctt iframe{
-    display: none;
-    
+    display: none; 
 }
 
 .ctt{
@@ -641,7 +640,7 @@ main h2 {
         margin-bottom: 30px;
     }
 
-    iframe{
+    .ctt iframe{
         display: block;
         margin-bottom: 15px;
     }
