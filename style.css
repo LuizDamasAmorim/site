@@ -347,7 +347,9 @@ main h2 {
     background-color: #416b25;
 }
 
-iframe{display: none;
+iframe{
+    display: none;
+    
 }
 
 .ctt{
@@ -364,11 +366,6 @@ iframe{display: none;
     margin-bottom: 20px;
 }
 
-/*footer*/
-
-#copyrigth{
-    text-decoration: none;
-}
 
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
